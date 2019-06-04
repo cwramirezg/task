@@ -7,7 +7,7 @@ import android.os.Looper;
 import android.widget.TextView;
 
 import com.gmail.cwramirezg.task.R;
-import com.gmail.cwramirezg.task.features.main.MainNavigationActivity;
+import com.gmail.cwramirezg.task.features.login.LoginActivity;
 import com.gmail.cwramirezg.task.features.shared.BaseActivity;
 
 import javax.inject.Inject;
@@ -48,7 +48,7 @@ public class SplashActivity extends BaseActivity implements SplashContract.View 
 
     @Override
     public void goToMainActivity() {
-        startActivity(MainNavigationActivity.newInstance(getContext()));
+        startActivity(LoginActivity.newInstance(getContext()));
         finish();
     }
 }

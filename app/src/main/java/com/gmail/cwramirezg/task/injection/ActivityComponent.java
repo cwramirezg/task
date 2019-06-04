@@ -1,5 +1,6 @@
 package com.gmail.cwramirezg.task.injection;
 
+import com.gmail.cwramirezg.task.features.login.LoginActivity;
 import com.gmail.cwramirezg.task.features.main.MainNavigationActivity;
 import com.gmail.cwramirezg.task.features.splash.SplashActivity;
 import com.gmail.cwramirezg.task.features.sync.SyncDialog;
@@ -15,6 +16,8 @@ import dagger.Component;
 public interface ActivityComponent {
 
     void inject(SplashActivity activity);
+
+    void inject(LoginActivity activity);
 
     void inject(MainNavigationActivity activity);
 
